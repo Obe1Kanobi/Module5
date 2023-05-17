@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.default {
+  max-width: 428px;
+  margin: 0 auto;
+  height: 762px;
+}
+
+body {
+  font-family: "TT Lakes";
+}
