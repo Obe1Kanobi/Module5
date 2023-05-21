@@ -2,14 +2,42 @@
   padding: 0;
   box-sizing: border-box;
   margin: 0;
-}
-
-.default {
-  max-width: 428px;
-  margin: 0 auto;
-  height: 762px;
+  transition: 0.5s ease-in-out;
 }
 
 body {
   font-family: "TT Lakes";
+  letter-spacing: -0.4px;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  src: local("TT Lakes Medium"), local("TT-Lakes-Medium"),
+    url("/font/TTLakes-Medium.woff2") format("woff2"),
+    url("/font/TTLakes-Medium.woff") format("woff"),
+    url("/font/TTLakes-Medium.ttf") format("truetype");
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.header__title {
+  margin-left: 40px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  @media (max-width: 320px) {
+    width: 288px;
+  }
+}
+
+.wraper {
+  margin: 0 auto;
+  max-width: 1120px;
+
+  @media (max-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media (max-width: 320px) {
+    max-width: 320px;
+  }
 }
