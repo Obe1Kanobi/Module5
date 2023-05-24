@@ -1,3 +1,10 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px 32px;
+  align-items: center;
+}
+
 .brands__section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -8,11 +15,11 @@
   margin-left: 32px;
 
   @media (max-width: 768px) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   @media (max-width: 320px) {
-    display: flex;
+    display: none;
   }
 }
 
@@ -41,7 +48,11 @@
   align-items: center;
   width: 133px;
   padding-top: 7px;
+  margin-left: 27px;
   gap: 0px 5px;
   border-width: 0px;
   background-color: white;
+  @media (min-width: 0) and (max-width: 320px) {
+    display: none;
+  }
 }

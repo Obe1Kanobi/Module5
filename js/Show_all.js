@@ -1,29 +1,33 @@
-new Swiper(".brands__section--cont");
-
-var brands__sum = document.getElementById("brands__sum");
-var showMoreButton = document.getElementById("showMoreButton");
-var itemsToShow = 3;
-var hiddenItems = [];
-
-showMoreButton.addEventListener("click", function () {
-  if (hiddenItems.length === 0) {
-    // Показываем дополнительные скрытые контейнеры
-    for (var i = itemsToShow; i < container.children.length; i++) {
-      container.children[i].classList.remove("hidden");
-      hiddenItems.push(container.children[i]);
-    }
-    showMoreButton.textContent = "Скрыть";
-  } else {
-    // Скрываем дополнительные контейнеры
-    for (var j = hiddenItems.length - 1; j >= 0; j--) {
-      hiddenItems[j].classList.add("hidden");
-    }
-    hiddenItems = [];
-    showMoreButton.textContent = "Показать все";
-  }
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".swiper", {
+    direction: "horizontal",
+    loop: true,
+    pagination: {
+      clickable: true,
+      el: ".swiper-pagination",
+    },
+  });
 });
 
-// Инициализируем скрытие дополнительных контейнеров
-for (var k = itemsToShow; k < container.children.length; k++) {
-  container.children[k].classList.add("hidden");
+function showMore() {
+  var element1 = document.getElementById("element1");
+  var element2 = document.getElementById("element2");
+  var element3 = document.getElementById("element3");
+  var text = document.getElementById("text");
+  var showMoreButton = document.getElementById("showMoreButton");
+  var image = document.getElementById("image");
+
+  if (element1.style.display === "none") {
+    element1.style.display = "flex";
+    element2.style.display = "flex";
+    element3.style.display = "flex";
+    text.innerHTML = "Скрыть";
+    image.src = "images/expand_up.webp";
+  } else {
+    element1.style.display = "none";
+    element2.style.display = "none";
+    element3.style.display = "none";
+    text.innerHTML = "Показать всё";
+    image.src = "images/expand.webp";
+  }
 }

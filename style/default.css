@@ -29,7 +29,13 @@ body {
   }
 }
 
-.wraper {
+.swiper {
+  width: 320px;
+  height: 116px;
+  padding-left: 30px;
+}
+
+.wrapper {
   margin: 0 auto;
   max-width: 1120px;
 
@@ -40,4 +46,23 @@ body {
   @media (max-width: 320px) {
     max-width: 320px;
   }
+}
+
+.brands__mini {
+  display: none !important;
+  @media (min-width: 0) and (max-width: 320px) {
+    display: grid !important;
+  }
+}
+
+.brands__section {
+  display: flex;
+  @media (min-width: 0) and (max-width: 320px) {
+    display: none !important;
+    background-color: black;
+  }
+}
+
+#container {
+  display: none;
 }

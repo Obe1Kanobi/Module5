@@ -1,0 +1,32 @@
+.brands__mini {
+  @media (min-width: 0) and (max-width: 320px) {
+    display: flex !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr !important;
+    grid-template-rows: 1fr;
+    gap: 16px 0px !important;
+    margin-bottom: 16px;
+    margin-top: 24px;
+    margin-left: 32px;
+  }
+}
+
+.brands__mini-cont {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 240px !important;
+  height: 72px !important;
+  border: 1px solid rgba(234, 234, 234, 1);
+  border-radius: 6px;
+  margin-right: 16px;
+}
+
+.brands__mini-logo {
+  padding-left: 16px;
+}
+
+.brands__mini-go {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 16px;
+}
