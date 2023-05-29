@@ -10,24 +10,20 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function showMore() {
-  var element1 = document.getElementById("element1");
-  var element2 = document.getElementById("element2");
-  var element3 = document.getElementById("element3");
-  var text = document.getElementById("text");
-  var showMoreButton = document.getElementById("showMoreButton");
-  var image = document.getElementById("image");
+  let button = document.querySelector(".button");
+  let container = document.querySelector(".container");
+  let buttontext = document.querySelector(".buttontext");
+  let buttonimg = document.querySelector(".buttonimg");
 
-  if (element1.style.display === "none") {
-    element1.style.display = "flex";
-    element2.style.display = "flex";
-    element3.style.display = "flex";
-    text.innerHTML = "Скрыть";
-    image.src = "images/expand_up.webp";
+  if (buttontext.innerHTML === "Скрыть") {
+    container.style.display = "none";
+    buttontext.innerHTML = "Показать всё";
+    buttonimg.src = "images/expand.webp";
   } else {
-    element1.style.display = "none";
-    element2.style.display = "none";
-    element3.style.display = "none";
-    text.innerHTML = "Показать всё";
-    image.src = "images/expand.webp";
+    container.style.display = "grid";
+    buttontext.innerHTML = "Скрыть";
+    buttonimg.src = "images/expand_up.webp";
   }
 }
+
+// найти способ как посмотреть текст в кнопке, если у меня в кнопке текст "Показать всё", то показываем контейнер
