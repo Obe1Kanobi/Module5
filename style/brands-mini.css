@@ -1,16 +1,17 @@
 .brands__mini {
   @media (min-width: 0) and (max-width: 320px) {
     display: flex !important;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr !important;
-    grid-template-rows: 1fr;
-    gap: 16px 0px !important;
+    justify-content: center;
+    align-items: center;
+    /* gap: 16px 0px !important; */
     margin-bottom: 16px;
     margin-top: 24px;
-    margin-left: 32px;
+    padding-left: 24px;
   }
 }
 
 .brands__mini-cont {
+  background-color: rgba(255, 255, 255, 1);
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;

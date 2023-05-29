@@ -8,6 +8,7 @@
 body {
   font-family: "TT Lakes";
   letter-spacing: -0.4px;
+  background-color: rgba(248, 248, 248, 1);
 }
 
 @font-face {
@@ -21,11 +22,13 @@ body {
 }
 
 .header__title {
-  margin-left: 40px;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  padding-left: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: rgba(253, 253, 253, 1);
   @media (max-width: 320px) {
     width: 288px;
+    padding-left: 16px;
   }
 }
 
@@ -61,8 +64,4 @@ body {
     display: none !important;
     background-color: black;
   }
-}
-
-#container {
-  display: none;
 }
