@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".swiper", {
     slidesPerView: "auto",
-    spaceBetween: 16,
     direction: "horizontal",
     loop: false,
     pagination: {

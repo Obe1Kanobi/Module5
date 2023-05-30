@@ -26,6 +26,9 @@ body {
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: rgba(253, 253, 253, 1);
+  @media (max-width: 768px) {
+    padding-left: 25px;
+  }
   @media (max-width: 320px) {
     width: 288px;
     padding-left: 16px;
